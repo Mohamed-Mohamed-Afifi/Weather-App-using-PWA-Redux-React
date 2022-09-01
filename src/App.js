@@ -13,7 +13,7 @@ function App() {
   }
   return (
     <div className="App">
-      <input type='text' name='country' ref={refd} />
+      <input type='text' name='country' ref={refd} className="countryIn" />
       <button onClick={() => handel()}>show</button>
     </div>
   );

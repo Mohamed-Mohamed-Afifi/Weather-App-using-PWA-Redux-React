@@ -6,6 +6,7 @@ export const getData = createAsyncThunk('/fetch/api', async (query) => {
     const res = await axios.get(URL, {
         params: {
             q: query,
+            units: 'metric',
             APPID: API_KEY
 
         }
@@ -17,7 +18,7 @@ export const dataSlice = createSlice({
     initialState: {
         data: [],
         loading: false,
-        error: false,
+        error: true,
     },
     extraReducers: {
         [getData.pending]: (state) => {
@@ -27,6 +28,7 @@ export const dataSlice = createSlice({
             console.log(payload)
             state.data = payload
             state.loading = false
+            state.error = false
         },
         [getData.rejected]: (state) => {
             state.error = true

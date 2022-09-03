@@ -8,16 +8,22 @@ function App() {
   const refd = useRef()
   const dispatch = useDispatch()
   const found = useSelector(state => state.Fdata.error)
-  const handel = () => {
+  const handel = (e) => {
     if (refd.current.value) {
       dispatch(getData(refd.current.value))
+    }
+  }
+  const handelclick = (e) => {
+    if (e.key === 'Enter' && refd.current.value) {
+      dispatch(getData(refd.current.value))
+
     }
   }
   return (
     <div className="App d-flex flex-md-row flex-column">
       <div className='container'>
         <div className='row justify-content-center align-items-center'>
-          <input type='text' name='country' ref={refd} className="countryIn col-md-4 col-12 mx-0 mx-md-3" placeholder='Please Enter The Country Name' />
+          <input type='text' name='country' ref={refd} className="countryIn col-md-4 col-12 mx-0 mx-md-3" placeholder='Please Enter The Country Name' onKeyDown={(e) => handelclick(e)} />
           <button onClick={() => handel()} className='searchBtn col-md-2 col-12 mx-0'>Search</button>
           <div className="w-100"></div>
           {!found && <Card />}

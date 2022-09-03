@@ -16,8 +16,19 @@
   border-radius: 8px;
   padding: 0.5rem;
   margin: 1rem;
-  color: #ffc107;
+  color: #67c1c1;
   font-weight: bold;
+  text-indent: 1.1em;
+}
+
+.state,
+.temp {
+  font-family: monospace;
+  text-transform: capitalize;
+}
+
+.temp {
+  font-family: cursive;
 }
 
 .searchBtn {
@@ -36,10 +47,26 @@
   background: #0000002e;
 }
 
+.temp-deg {
+  font-family: fantasy;
+}
+
 .temp-unit {
   top: -.5em;
   height: fit-content;
-  color: #ffc107;
+  color: #b8bd6d;
+  top: .5em;
+  font-weight: bold;
+  font-family: fangsong;
+}
+
+.wind-icon {
+  font-size: 4rem;
+  color: #67c1c1;
+}
+
+.wind {
+  font-family: fantasy;
 }
 
 .App-logo {

@@ -2,6 +2,8 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGaugeHigh } from '@fortawesome/free-solid-svg-icons'
+import { faGear } from '@fortawesome/free-solid-svg-icons'
+import { faGift } from '@fortawesome/free-solid-svg-icons'
 
 const Card = () => {
     const data = useSelector(state => state.Fdata.data)
@@ -24,11 +26,11 @@ const Card = () => {
                     <h5 className='wind'>{data.wind.speed} M/h</h5>
                 </div>
                 <div>
-                    <FontAwesomeIcon icon={faGaugeHigh} className='wind-icon my-2' />
+                    <FontAwesomeIcon icon={faGear} className='wind-icon my-2' />
                     <h5 className='wind'>{data.wind.speed} M/h</h5>
                 </div>
                 <div>
-                    <FontAwesomeIcon icon={faGaugeHigh} className='wind-icon my-2' />
+                    <FontAwesomeIcon icon={faGift} className='wind-icon my-2' />
                     <h5 className='wind'>{data.wind.speed} M/h</h5>
                 </div>
             </div>

@@ -21,6 +21,17 @@
   text-indent: 1.1em;
 }
 
+.temp::first-letter {
+  color: #67c1c1;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.state::first-letter {
+  color: #67c1c1;
+  font-weight: bold;
+}
+
 .state,
 .temp {
   font-family: monospace;
@@ -37,7 +48,7 @@
   outline: 0;
   border-radius: 8px;
   padding: 5px 34px;
-  color: white;
+  color: #67c1c1;
   font-size: 19px;
   font-family: cursive;
 }
@@ -54,7 +65,7 @@
 .temp-unit {
   top: -.5em;
   height: fit-content;
-  color: #b8bd6d;
+  color: #67c1c1;
   top: .5em;
   font-weight: bold;
   font-family: fangsong;

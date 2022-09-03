@@ -1,0 +1,31 @@
+.theme-menu {
+    position: absolute;
+    top: 0;
+    background: red;
+    height: 100vh;
+    transition: all .35s ease-in-out;
+    width: 30vw;
+
+    .container {
+        height: 100vh;
+        position: relative;
+
+        .theme-btn {
+            position: absolute;
+            top: 1rem;
+            right: -2rem;
+        }
+    }
+}
+
+.hide {
+    transform: translatex(-20vw);
+}
+
+.show {
+    transform: translatex(0rem);
+}
+
+.Color-btn {
+    padding: .5rem;
+}

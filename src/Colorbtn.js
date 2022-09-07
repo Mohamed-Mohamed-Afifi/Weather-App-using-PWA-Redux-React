@@ -19,7 +19,7 @@ const Colorbtn = () => {
         <div className='d-flex justify-content-center flex-wrap'>
             {
                 colors.map((el, ind) => (
-                    <button data-color={el} key={ind} className='Color-btn mx-md-2 col-md-1' onClick={(e) => handelclr(e)} style={{ background: `${el}` }}></button>
+                    <button data-color={el} key={ind} className='Color-btn mx-md-2 mx-1 col-md-1 my-2' onClick={(e) => handelclr(e)} style={{ background: `${el}` }}></button>
                 ))
             }
         </div>

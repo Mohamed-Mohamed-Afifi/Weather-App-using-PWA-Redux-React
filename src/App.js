@@ -25,7 +25,7 @@ function App() {
     }
   }
   return (
-    <div className={`App-${AppClass}-theme`}>
+    <div className={`App-${AppClass ?? '5ce4ff'}-theme`}>
       <div className='container'>
         <div className='row justify-content-center align-items-center'>
           <input type='text' name='country' ref={refd} className="countryIn col-md-4 col-12 mx-0 mx-md-3" placeholder='Please Enter The Country Name' onKeyDown={(e) => handelclick(e)} />

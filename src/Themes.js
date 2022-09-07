@@ -13,9 +13,9 @@ const Themes = () => {
             <div className='theme-menu hide col-2'>
                 <div className='container py-4'>
                     <button className='theme-btn' onClick={(e) => handelClick(e)}>
-                        <FontAwesomeIcon icon={faGear} />
+                        <FontAwesomeIcon icon={faGear} className='setting-animate' />
                     </button>
-                    <h5>Please Select the Color</h5>
+                    <h5 className='color-heading'>Please Select the Color</h5>
                     <Colorbtn />
                 </div>
             </div>

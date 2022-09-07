@@ -4,13 +4,12 @@ import './styles/index.css';
 import App from './App';
 import { Provider } from 'react-redux';
 import { Store } from './Redux/store';
-import Themes from './Themes';
+// import Themes from './Themes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={Store}>
     <App />
-    <Themes />
   </Provider>
 );
 

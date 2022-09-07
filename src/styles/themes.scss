@@ -1,10 +1,25 @@
+@import "vars";
+
+* {
+    transition: all .35s ease-in-out;
+}
+
+@mixin general {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .theme-menu {
     position: absolute;
     top: 0;
-    background: red;
+    background: #5ce4ff;
     height: 100vh;
-    transition: all .35s ease-in-out;
-    width: 30vw;
+    transition: all 0.35s ease-in-out;
+    width: 20vw;
+    left: 0;
 
     .container {
         height: 100vh;
@@ -12,10 +27,21 @@
 
         .theme-btn {
             position: absolute;
-            top: 1rem;
-            right: -2rem;
+            right: -3rem;
+            padding: 10px 20px;
+            border-left: 0;
+            border-radius: 20rem 10rem 10rem 1rem;
+            border: 1px solid transparent;
+            color: white;
         }
     }
+}
+
+.color-heading {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: cursive;
 }
 
 .hide {
@@ -28,4 +54,183 @@
 
 .Color-btn {
     padding: .5rem;
+    border: 1px solid white;
+    outline: 0;
+    opacity: .7;
+}
+
+.Color-btn.active {
+    opacity: 1;
+}
+
+// customs app
+.App-5ce4ff-theme {
+    @include general();
+    background: map-get($main-app, 'mainColor');
+    background: -webkit-linear-gradient(to right, #f4791f, map-get($main-app, 'mainColor'));
+    background: linear-gradient(to right, #f4791f, map-get($main-app, 'mainColor'));
+
+    .theme-menu {
+        background: map-get($main-app, 'mainColor');
+        box-shadow: 0 10px 32px -7px map-get($main-app, 'mainColor');
+    }
+
+    .countryIn {
+        color: map-get($main-app, 'mainColor');
+    }
+
+    .temp::first-letter,
+    .state::first-letter {
+        color: map-get($main-app, 'mainColor');
+    }
+
+    .searchBtn {
+        color: map-get($main-app, 'mainColor');
+    }
+
+    .temp-unit {
+        color: map-get($main-app, 'mainColor');
+    }
+
+    .wind-icon {
+        color: map-get($main-app, 'mainColor');
+    }
+
+    .theme-btn {
+        background: map-get($main-app, 'mainColor');
+        box-shadow: 0 10px 32px -7px map-get($main-app, 'mainColor');
+    }
+}
+
+// second theme
+
+.App-ba95ff-theme {
+    @include general();
+    background: map-get($purb-app, 'mainColor');
+    background: -webkit-linear-gradient(to right, #f4791f, map-get($purb-app, 'mainColor'));
+    background: linear-gradient(to right, #f4791f, map-get($purb-app, 'mainColor'));
+
+    .theme-menu {
+        background: map-get($purb-app, 'mainColor');
+        box-shadow: 0 10px 32px -7px map-get($purb-app, 'mainColor');
+    }
+
+    .countryIn {
+        color: map-get($purb-app, 'mainColor');
+    }
+
+    .temp::first-letter,
+    .state::first-letter {
+        color: map-get($purb-app, 'mainColor');
+    }
+
+    .searchBtn {
+        color: map-get($purb-app, 'mainColor');
+    }
+
+    .temp-unit {
+        color: map-get($purb-app, 'mainColor');
+    }
+
+    .wind-icon {
+        color: map-get($purb-app, 'mainColor');
+    }
+
+    .theme-btn {
+        background: map-get($purb-app, 'mainColor');
+        box-shadow: 0 10px 32px -7px map-get($purb-app, 'mainColor');
+    }
+}
+
+// third theme
+.App-ccff74-theme {
+    @include general();
+    background: map-get($yellow-app, 'mainColor');
+    background: -webkit-linear-gradient(to right, #2e1e13, map-get($yellow-app, 'mainColor'));
+    background: linear-gradient(to right, #423731, map-get($yellow-app, 'mainColor'));
+
+    .theme-menu {
+        background: map-get($yellow-app, 'mainColor');
+        box-shadow: 0 10px 32px -7px map-get($yellow-app, 'mainColor');
+    }
+
+    .countryIn {
+        color: map-get($yellow-app, 'mainColor');
+    }
+
+    .temp::first-letter,
+    .state::first-letter {
+        color: map-get($yellow-app, 'mainColor');
+    }
+
+    .searchBtn {
+        color: map-get($yellow-app, 'mainColor');
+    }
+
+    .temp-unit {
+        color: map-get($yellow-app, 'mainColor');
+    }
+
+    .wind-icon {
+        color: map-get($yellow-app, 'mainColor');
+    }
+
+    .theme-btn {
+        background: map-get($yellow-app, 'mainColor');
+        box-shadow: 0 10px 32px -7px map-get($yellow-app, 'mainColor');
+    }
+}
+
+// fourth theme
+.App-dc3545-theme {
+    @include general();
+    background: map-get($red-app, 'mainColor');
+    background: -webkit-linear-gradient(to right, #2e1e13, map-get($red-app, 'mainColor'));
+    background: linear-gradient(to right, #423731, map-get($red-app, 'mainColor'));
+
+    .theme-menu {
+        background: map-get($red-app, 'mainColor');
+        box-shadow: 0 10px 32px -7px map-get($red-app, 'mainColor');
+    }
+
+    .countryIn {
+        color: map-get($red-app, 'mainColor');
+    }
+
+    .temp::first-letter,
+    .state::first-letter {
+        color: map-get($red-app, 'mainColor');
+    }
+
+    .searchBtn {
+        color: map-get($red-app, 'mainColor');
+    }
+
+    .temp-unit {
+        color: map-get($red-app, 'mainColor');
+    }
+
+    .wind-icon {
+        color: map-get($red-app, 'mainColor');
+    }
+
+    .theme-btn {
+        background: map-get($red-app, 'mainColor');
+        box-shadow: 0 10px 32px -7px map-get($red-app, 'mainColor');
+    }
+}
+
+// aniamtion
+.setting-animate {
+    animation: rotation 3s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
 }

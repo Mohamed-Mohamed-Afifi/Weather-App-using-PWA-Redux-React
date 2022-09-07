@@ -1,10 +1,15 @@
+* {
+  transition: all 0.35s ease-in-out;
+}
+
 .theme-menu {
   position: absolute;
   top: 0;
-  background: red;
+  background: #5ce4ff;
   height: 100vh;
   transition: all 0.35s ease-in-out;
-  width: 30vw;
+  width: 20vw;
+  left: 0;
 }
 .theme-menu .container {
   height: 100vh;
@@ -12,8 +17,19 @@
 }
 .theme-menu .container .theme-btn {
   position: absolute;
-  top: 1rem;
-  right: -2rem;
+  right: -3rem;
+  padding: 10px 20px;
+  border-left: 0;
+  border-radius: 20rem 10rem 10rem 1rem;
+  border: 1px solid transparent;
+  color: white;
+}
+
+.color-heading {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: cursive;
 }
 
 .hide {
@@ -26,4 +42,170 @@
 
 .Color-btn {
   padding: 0.5rem;
+  border: 1px solid white;
+  outline: 0;
+  opacity: 0.7;
+}
+
+.Color-btn.active {
+  opacity: 1;
+}
+
+.App-5ce4ff-theme {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5ce4ff;
+  background: linear-gradient(to right, #f4791f, #5ce4ff);
+}
+.App-5ce4ff-theme .theme-menu {
+  background: #5ce4ff;
+  box-shadow: 0 10px 32px -7px #5ce4ff;
+}
+.App-5ce4ff-theme .countryIn {
+  color: #5ce4ff;
+}
+.App-5ce4ff-theme .temp::first-letter,
+.App-5ce4ff-theme .state::first-letter {
+  color: #5ce4ff;
+}
+.App-5ce4ff-theme .searchBtn {
+  color: #5ce4ff;
+}
+.App-5ce4ff-theme .temp-unit {
+  color: #5ce4ff;
+}
+.App-5ce4ff-theme .wind-icon {
+  color: #5ce4ff;
+}
+.App-5ce4ff-theme .theme-btn {
+  background: #5ce4ff;
+  box-shadow: 0 10px 32px -7px #5ce4ff;
+}
+
+.App-ba95ff-theme {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ba95ff;
+  background: linear-gradient(to right, #f4791f, #ba95ff);
+}
+.App-ba95ff-theme .theme-menu {
+  background: #ba95ff;
+  box-shadow: 0 10px 32px -7px #ba95ff;
+}
+.App-ba95ff-theme .countryIn {
+  color: #ba95ff;
+}
+.App-ba95ff-theme .temp::first-letter,
+.App-ba95ff-theme .state::first-letter {
+  color: #ba95ff;
+}
+.App-ba95ff-theme .searchBtn {
+  color: #ba95ff;
+}
+.App-ba95ff-theme .temp-unit {
+  color: #ba95ff;
+}
+.App-ba95ff-theme .wind-icon {
+  color: #ba95ff;
+}
+.App-ba95ff-theme .theme-btn {
+  background: #ba95ff;
+  box-shadow: 0 10px 32px -7px #ba95ff;
+}
+
+.App-ccff74-theme {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #09ff8c;
+  background: linear-gradient(to right, #423731, #09ff8c);
+}
+.App-ccff74-theme .theme-menu {
+  background: #09ff8c;
+  box-shadow: 0 10px 32px -7px #09ff8c;
+}
+.App-ccff74-theme .countryIn {
+  color: #09ff8c;
+}
+.App-ccff74-theme .temp::first-letter,
+.App-ccff74-theme .state::first-letter {
+  color: #09ff8c;
+}
+.App-ccff74-theme .searchBtn {
+  color: #09ff8c;
+}
+.App-ccff74-theme .temp-unit {
+  color: #09ff8c;
+}
+.App-ccff74-theme .wind-icon {
+  color: #09ff8c;
+}
+.App-ccff74-theme .theme-btn {
+  background: #09ff8c;
+  box-shadow: 0 10px 32px -7px #09ff8c;
+}
+
+.App-dc3545-theme {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dc3545;
+  background: linear-gradient(to right, #423731, #dc3545);
+}
+.App-dc3545-theme .theme-menu {
+  background: #dc3545;
+  box-shadow: 0 10px 32px -7px #dc3545;
+}
+.App-dc3545-theme .countryIn {
+  color: #dc3545;
+}
+.App-dc3545-theme .temp::first-letter,
+.App-dc3545-theme .state::first-letter {
+  color: #dc3545;
+}
+.App-dc3545-theme .searchBtn {
+  color: #dc3545;
+}
+.App-dc3545-theme .temp-unit {
+  color: #dc3545;
+}
+.App-dc3545-theme .wind-icon {
+  color: #dc3545;
+}
+.App-dc3545-theme .theme-btn {
+  background: #dc3545;
+  box-shadow: 0 10px 32px -7px #dc3545;
+}
+
+.setting-animate {
+  -webkit-animation: rotation 3s linear infinite;
+          animation: rotation 3s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=themes.css.map */
